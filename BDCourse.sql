@@ -84,7 +84,7 @@ INSERT INTO course_videos (id, title, url, course_id)
 VALUES ('dc667da5-9b55-454f-b4f6-32cd22bb1a42', 'Inteligencia Emocional 1', 'https://platzi.com/clases/1614-inteligencia-emocional', '521eafcb-988a-4bf7-8b76-911e190d597b'),
        ('a22fbb9a-e8d2-4b8b-8ed8-026688aa3630', 'Community Manager 1', 'https://platzi.com/clases/1302-community-manager/34450-que-hacen-los-community-managers', 'd8f031f0-d878-46a5-ae75-1f441d0a973a');
 
-SELECT c.id, c.title, c.description, l."name",  c.teacher, ca."name", cv.title, cv.url, ca."name" 
+SELECT c.id, c.title, c.description, l."name",  c.teacher, ca."name", cv.title
 FROM courses as c 
 INNER JOIN course_videos cv  
 ON c.id  = cv.course_id
